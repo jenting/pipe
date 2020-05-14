@@ -30,12 +30,11 @@ DNS.{{ $index }} = {{ $value }}
 {{ end -}}
 {{ range $index, $value := .IP -}}
 IP.{{ $index }} = {{ $value }}
-{{ end -}}
-`
+{{ end -}}`
 )
 
 func main() {
-	DN := []string{"CN=jenting"}
+	DN := []string{"CN=jenting", "OU=io"}
 	DNS := []string{"jenting.io"}
 	IP := []string{"8.8.8.8", "8.8.4.4"}
 
